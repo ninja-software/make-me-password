@@ -9,9 +9,18 @@ import (
 	mmp "github.com/ninja-software/make-me-password"
 )
 
+// Version of the software
+const Version string = "v0.1.2"
+
 func main() {
 	format := flag.String("format", "base64", "output format. choices: base64, hex")
+	ver := flag.Bool("version", false, "version of the software")
 	flag.Parse()
+
+	if *ver {
+		fmt.Printf("%s version %s\n", os.Args[0], Version)
+		os.Exit(0)
+	}
 
 	args := flag.Args()
 
