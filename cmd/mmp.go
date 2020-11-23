@@ -6,7 +6,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/ninja-software/mmp"
+	mmp "github.com/ninja-software/make-me-password"
 )
 
 func main() {
