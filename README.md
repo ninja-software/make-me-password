@@ -2,6 +2,12 @@
 
 Quickly generate bcrypt password hash for use
 
+## Install
+
+```bash
+$ go get -u github.com/ninja-software/make-me-password
+```
+
 ## Usage
 
 ```bash
